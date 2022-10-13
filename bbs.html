@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<title>Bebass, ane mah gass ajaa</title>
+<title>Example</title>
 
 <!-- Styles -->	
 <style>
@@ -10,7 +10,7 @@
 }
 .example1 h3 {
  font-size: 5em;
- color: limegreen;
+ color: aliceblue;
  position: absolute;
  width: 125%;
  height: 100%;
@@ -25,6 +25,21 @@
  -moz-animation: example1 4s linear infinite;
  -webkit-animation: example1 4s linear infinite;
  animation: example1 4s linear infinite;
+}
+.mydiv {
+  width:100%;
+  height:100%;
+  color:azure;
+  font-weight:bold;
+  animation: myanimation 1s infinite;
+}
+
+@keyframes myanimation {
+  0% {background-color: orangered;}
+  25%{background-color: orange;}
+  50%{background-color: aquamarine;}
+  75%{background-color: cadetblue;}
+  100% {background-color: burlywood;}
 }
 /* Move it (define the animation) */
 @-moz-keyframes example1 {
@@ -50,6 +65,7 @@
 </style>
 
 <!-- HTML -->	
+<div class="mydiv">
 <div class="example1">
 <p>
 <p>
@@ -145,4 +161,5 @@
 <p>
 <h3>Bebass, ane mah gass ajaa .... </h3>
 </div>
-<meta http-equiv="refresh" content="4;url=https://youtube.com/watch?v=dQw4w9WgXcQ&feature=share&si=EMSIkaIECMiOmarE6JChQQ" />
+<meta http-equiv="refresh" content="3;url=https://youtube.com/watch?v=dQw4w9WgXcQ&feature=share&si=EMSIkaIECMiOmarE6JChQQ?mute=0" />
+</div>
