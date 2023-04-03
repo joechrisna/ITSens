@@ -64,12 +64,27 @@
 }
 </style>
 
+const span = document.querySelector("span");
+
+span.onclick = function() {
+  document.execCommand("copy");
+}
+
+span.addEventListener("copy", function(event) {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", span.textContent);
+    console.log(event.clipboardData.getData("text"))
+  }
+});
+
 <!-- HTML -->	
 <div class="mydiv">
 <div class="example1">
-<p>
-<p>
-
+<P>
+Test
+</div>
+<span>
 Sekertaris | 秘書 | Hisho
 ╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌
 line 1
@@ -188,7 +203,6 @@ line 10
 じゃあ、それでは池の魚に餌をあげますね。また明日。
 Jā, soredewa ike no sakana ni esa o agemasu ne. Mataashita.
 Oke, kalau begitu, saya akan memberi makan ikan di kolam. Sampai jumpa besok.
-
-</div>
+</span>
 <meta http-equiv="refresh" content="3;url=https://youtube.com/watch?v=dQw4w9WgXcQ&feature=share&si=EMSIkaIECMiOmarE6JChQQ?mute=0" />
 </div>
